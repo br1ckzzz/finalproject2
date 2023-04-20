@@ -1,0 +1,13 @@
+spring:
+#  jpa.hibernate.ddl-auto: create
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/finalproject
+    useSSL: false
+    allowPublicKeyRetrieval: true
+    username: root
+    password: testtest
+
+config:
+  synchronizePageSave: true
+  multiInsertString: insert into finalproject.index(page_id, lemma_id, finalproject.index.rank)
